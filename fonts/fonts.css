@@ -1,0 +1,81 @@
+/* Font definitions for the website */
+
+@font-face {
+  font-family: 'Amanojaku';
+  src: url('./Amanojaku-Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Modernline Bold Font */
+@font-face {
+  font-family: 'ModernlineBold';
+  src: url('./modernline bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Modernline Regular Font */
+@font-face {
+  font-family: 'Modernline';
+  src: url('./modernline.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Geraldine Personal Use Font */
+@font-face {
+  font-family: 'GERALDINE PERSONAL USE';
+  src: url('./GERALDINE PERSONAL USE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Eagle Horizon Font */
+@font-face {
+  font-family: 'EagleHorizonP';
+  src: url('./EagleHorizonP.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amsterline Font */
+@font-face {
+  font-family: 'Amsterline';
+  src: url('./Amsterline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* These fonts need to be downloaded separately */
+@font-face {
+  font-family: 'Osake';
+  src: url('./osake.eot');
+  src: url('./osake.eot?#iefix') format('embedded-opentype'),
+       url('./osake.woff2') format('woff2'),
+       url('./osake.woff') format('woff'),
+       url('./osake.ttf') format('truetype'),
+       url('./osake.svg#Osake') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mistuki';
+  src: url('./mistuki.eot');
+  src: url('./mistuki.eot?#iefix') format('embedded-opentype'),
+       url('./mistuki.woff2') format('woff2'),
+       url('./mistuki.woff') format('woff'),
+       url('./mistuki.ttf') format('truetype'),
+       url('./mistuki.svg#Mistuki') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
