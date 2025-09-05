@@ -1,0 +1,47 @@
+/* Custom animations for the project */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+}
+
+/* Animation for kaiser image sliding from behind */
+@keyframes slideFromBehind {
+  from {
+    transform: translateY(0);
+    z-index: 0;
+  }
+  to {
+    transform: translateY(-60%);
+    z-index: 0;
+  }
+}
+
+.kaiser-image, .dokja-image, .moretti-image {
+  will-change: transform, opacity;
+  animation: slideFromBehind 0.5s ease-out;
+}
+
+.kaiser-container, .dokja-container, .moretti-container {
+  overflow: hidden;
+  position: relative;
+  will-change: transform;
+  transform: translateZ(0);
+}

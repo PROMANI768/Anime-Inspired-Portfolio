@@ -1,0 +1,91 @@
+/* Responsive styles for different screen sizes */
+
+/* Base styles for all devices */
+:root {
+  --animation-scale: 1;
+}
+
+/* Small mobile devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  :root {
+    --animation-scale: 0.7;
+  }
+  
+  .fixed {
+    position: fixed !important;
+  }
+  
+  /* Adjust font sizes for small screens */
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  :root {
+    --animation-scale: 0.85;
+  }
+  
+  /* Adjust font sizes for medium screens */
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  :root {
+    --animation-scale: 0.9;
+  }
+}
+
+/* Extra large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  :root {
+    --animation-scale: 1;
+  }
+}
+
+/* TV and ultra-wide screens */
+@media (min-width: 1400px) {
+  :root {
+    --animation-scale: 1.2;
+  }
+}
+
+/* Irregular aspect ratios */
+@media (max-aspect-ratio: 1/1) {
+  /* Portrait orientation adjustments */
+  .fixed {
+    position: absolute !important;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  /* Ultra-wide adjustments */
+  :root {
+    --animation-scale: 1.1;
+  }
+}
+
+/* Ensure Kaiser image is responsive */
+.object-contain {
+  object-fit: contain !important;
+}
+
+/* Ensure animations scale appropriately */
+.motion-div {
+  transform-origin: center center;
+  transform: scale(var(--animation-scale));
+}
